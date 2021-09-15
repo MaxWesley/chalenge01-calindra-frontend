@@ -2,7 +2,7 @@
 
 In this project, I use React with Typescript, Styled-components and Context API to fulfill the challenge.
 
-<img src="./apresentation.gif" />
+<img src="./apresentation.gif" width="1080" height="620"/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
