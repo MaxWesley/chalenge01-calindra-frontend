@@ -24,6 +24,12 @@ export const Container = styled.button<ContainerProps>`
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 840px) {
+        width: 100%;
+
+        font-size: 0.8rem;
+    }
+
     span {
         font-size: 1rem;
         font-weight: bold;

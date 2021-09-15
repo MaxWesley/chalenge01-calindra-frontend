@@ -20,6 +20,16 @@ html, body {
    background-color: #0F044C;
 }
 
+@media screen and (max-width: 860px) {
+    form {
+        flex-direction: column;
+
+        width: 100%;
+
+        margin: 0 1.5rem;
+    }
+}
+
 form {
     display: flex;
     align-items: flex-end;

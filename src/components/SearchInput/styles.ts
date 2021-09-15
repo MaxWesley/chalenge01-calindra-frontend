@@ -37,5 +37,17 @@ export const Container = styled.label`
         &:focus {
             border-color: #EEEEEEAA;
         }
+
+        @media screen and (max-width: 860px) {
+            width: 100%;
+
+            margin-bottom: 1rem;
+
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 840px) {
+        width: 100%;
     }
 `;
