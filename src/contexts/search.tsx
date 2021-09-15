@@ -4,9 +4,7 @@ import { createContext, Dispatch, SetStateAction, useState } from 'react';
 
 import { ToastContainer, toast } from 'react-toastify';
 
-
 import { api } from '../services/api';
-
 
 export interface ProductProp {
     id: Number;
@@ -22,6 +20,7 @@ interface ContextProps {
     getSearchResults(): Promise<void>;
     cleanProducts(): void;
     setSearch: Dispatch<SetStateAction<string>>;
+    search: string;
 }
 
 const Context = createContext({} as ContextProps);
@@ -51,7 +50,7 @@ function SearchProvider({ children }: Props) {
     const cleanProducts = () => setProducts([]);
 
     return (
-        <Context.Provider value={{ products, getSearchResults, cleanProducts, setSearch }}>
+        <Context.Provider value={{ products, getSearchResults, cleanProducts, setSearch, search }}>
             {children}
             <ToastContainer />
         </Context.Provider>

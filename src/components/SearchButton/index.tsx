@@ -6,12 +6,12 @@ import { useSearch } from '../../hooks/useSearch';
 
 function SearchButton() {
 
-    const {  getSearchResults } = useSearch();
+    const {  getSearchResults, search } = useSearch();
 
     return (
-        <Container className="active" onClick={getSearchResults}>
+        <Container className="active" onClick={getSearchResults} active={search.length > 0}>
             <BiSearchAlt size={22} />
-            <span>consultar</span>
+            <span>buscar</span>
         </Container>
     );
 }

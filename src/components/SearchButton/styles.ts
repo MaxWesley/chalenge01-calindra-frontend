@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.button`
+interface ContainerProps {
+    active?: boolean;
+}
+
+export const Container = styled.button<ContainerProps>`
     height: 4rem;
     
     padding: 1rem;
@@ -12,7 +16,7 @@ export const Container = styled.button`
 
     transition: filter 0.3s;
 
-    background-color: #787A91;
+    background-color: ${props => props.active ? "#00865e" : "#787A91"};
 
     color: #EEEEEE;
 
@@ -22,7 +26,10 @@ export const Container = styled.button`
 
     span {
         font-size: 1rem;
-        margin-left: 0.5rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        
+        margin: 0 0.5rem;
 
         text-transform: uppercase;
     }
