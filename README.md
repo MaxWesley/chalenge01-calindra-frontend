@@ -1,4 +1,4 @@
-# Challenge 02 Calindra Frontend
+# Challenge 01 Calindra Frontend
 
 In this project, I use React with Typescript, Styled-components and Context API to fulfill the challenge.
 
