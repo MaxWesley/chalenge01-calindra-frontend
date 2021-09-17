@@ -10,8 +10,9 @@ export const Viewer = styled.div`
 
         text-decoration: none;
 
-        span {
-            width: 160px;
+        span {        
+            min-width: 162.81px;
+            height: 140px;
 
             display: flex;
             align-items: center;

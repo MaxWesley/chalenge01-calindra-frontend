@@ -21,7 +21,10 @@ function ModalResult() {
             contentLabel="Modal result product">
             <Viewer>
                 {products.map((product: ProductProp) => (
-                    <a href={`https://www.americanas.com.br/produto/${product.id}`} target="_blank">
+                    <a
+                        href={`https://www.americanas.com.br/produto/${product.id}`}
+                        target="_blank"
+                        rel="noreferrer" >
                         <span>
                             #{product.id}
                         </span>
